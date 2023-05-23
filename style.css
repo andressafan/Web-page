@@ -1,0 +1,347 @@
+/*AS CONFIGURAÇÕES QUE ESTIVEREM NESSE * VAI SERVIR PARA TODA A PÁGINA*/
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 0;
+    margin: 0;
+}
+
+/*CONFIIGURAÇÕES PRA TODOS OS CONTAINERS*/
+.container {
+    padding: 60px 0; /*ESPAÇAMENTO INTERNO DE 60 PIXELS EM CIMA E EMBAIXO, E 0 PIXELS NA DIREITA E ESQUERDA*/
+    max-width: 1000px; /*LARGURA MÁXIMA DE CADA SECTION VAI SER DE 1000Pixels*/
+    margin: auto; /*ESPAÇAMENTO EXTERNO AUTO VAI DEIXAR O CONTAINER CENTRALIZADO*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*CONFIIGURAÇÕES PRA TODAS AS SECTIONS*/
+section {
+    padding: 54px 0;
+}
+
+/*CONFIGURAÇÕES PARA ODOS DA TAG titulo*/
+.titulo {
+    color: #231123;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+h3 {
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+
+/*-----------------CABEÇÁRIO-----------------*/
+header {
+    width: 100%; /*A largura do header vai ocupar 100% da tela*/
+    height: 600px; /*O header vai ter uma altura de 600px*/
+    background-image: url("https://i.pinimg.com/originals/92/58/9e/92589e5f88eeb86c19482fc514efdbf8.gif"); /*COLOQUEI UMA IMAGEM COMO FUNDO DO CABEÇÁRIO*/
+    background-repeat: no-repeat; /*TIREI TODA REPETIÇÃO DA IMAGEM*/
+    background-position: center center; /*A POSIÇÃO DA IMAGEM VAI SER CENTRALIZADO NA HORIZONTAL E VERTICAL*/
+    background-size: cover;
+    background-attachment: fixed; /*PARA CAUSAR UM EFEITO PARALAX NA IMAGEM*/
+}
+
+nav {
+    text-align: right; /*TODOS OS LINKS QUE ESTÃO NO "nav" VÃO ESTÁ POSICIONADOS A DIREIRA*/
+    padding: 30px 50px; /*O ESPAÇAMENTO INTERNO DE 30 Pixels PARA CIMA E BAIXO, 50 Pixels PARA ESQUERDA E DIREITA*/
+}
+
+nav a {
+    color: white; /*COR DA LETRA*/
+    font-weight: 500; /* ESPESSURA DA LETRA, QUANTO MAIOR ESSSE NÚMERO MAIOR A ESPESSURA*/
+    text-decoration: none; /*REMOVE UMA LINHA SUBLINHADA QUE FICA DEBAIXO DE TODO LINK*/
+    margin-right: 30px; /*ESPAÇAMENTO EXTERNO DA DIREITA DE 30 pixels*/
+    font-size: 25px; /*TAMANHO DA LETRA*/
+}
+
+nav a:hover { /*hover é usado quando passamos o cursor do mouse por cima de algum elemento na página html, e com isso aplicamos estilos sobre ele.*/
+    text-decoration: underline; /*QUANDO PASSARMOS O CURSOR POR CIMA DE UM LINK ELE VAI TER UM SUBLINHADO*/
+}
+
+header .textos-header {
+    display: flex; /*DISPLAY FLEX DEIXA OS BLOCOS MAIS FLEXIVEIS DE MODELAR*/
+    height: 420px; /*TODO O CONTEÚDO DE textos-header VAI TER ALTURA DE 420 PIXELS*/
+    width: 100%; /*A LARGURA VAI OCUPAR 100% DA TELA*/
+    align-items: center; /*POSIÇÃO VERTICAL NO CENTRO*/
+    justify-content: center;  /*POSIÇÃO HORIZONTAL NO CENTRO*/
+    flex-direction: column;  /*OS TEXTOS VÃO ESTAR ORGANIZADOS EM COLUNAS*/
+    text-align: center; /*OS TEXTOS VÃO FICAR CENTRALIZADOS*/
+}
+
+
+
+.textos-header h1 {
+    font-size: 60px; /*TAMANHO DO TEXTO*/
+    color: #fff; /*COR DO TEXTO*/
+}
+
+.textos-header h2 {
+    font-size: 40px; /*TAMANHO DO TEXTO*/
+    font-weight: 300; /*ESPESSURA DO TEXTO*/
+    color: #fff; /*COR DO TEXTO*/
+}
+
+/*-----------------SOBRE NÓS-----------------*/
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.carla {
+    width: 300px;
+    background-color: #0D1321;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 300px;
+    margin: 30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.205);
+}
+
+.carla p {
+    color: white;
+}
+
+.carla h3 {
+    color: white;
+}
+
+.andressa {
+    width: 300px;
+    background-color: #A7C6DA;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 300px;
+    margin: 30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.205);
+}
+
+.texto {
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+#sobre div img {
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
+
+/*-----------------HOBBIES-----------------*/
+
+#hobbies {
+    width: 100vw;
+    height: 100%;
+    background-image: url('imagens/img-fundo3.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.hobs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.hob {
+    margin: 10px 30px;
+    width: 300px;
+    background: #95bdda4a;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+
+}
+
+#hobbies h1 {
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.205);
+}
+
+.hob-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: word wrap;
+}
+
+.hob-div p {
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.205);
+
+
+}
+.hob img {
+    width: 230px;
+    padding: 10px;
+}
+
+
+
+/*-----------------TRABALHOS ESCOLARES-----------------*/
+#trabalhos {
+    width: 100vw;
+    height: 100%;
+}
+
+.trabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trab {
+    margin: 10px 30px;
+    width: 300px;
+    height: 300px;
+    background: #A7C6DA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;  
+    font-size: 23px;
+}
+
+.trab ul {
+    list-style-position: inside;
+}
+
+.trab ul li{
+    margin-top: 50px;
+}
+
+.trab ul li a {
+    color: #0D1321;
+    font-weight: 600;
+    
+}
+
+
+/*-----------------EXTENSÕES-----------------*/
+#extensoes {
+    width: 100vw;
+    height: 100%;
+    background-image: url('imagens/img-fundo.jpg');
+    background-position: center center;
+}
+
+/*------------------------------------------------*/
+
+
+.cont-ideia {
+    display: flex;
+    margin: 0 50px;
+    flex-wrap: wrap;
+    
+    background-color: #858ae32b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.205);
+}
+
+#extensoes h1 {
+    color: #fff;
+}
+
+.cont-ideia > ul {
+    flex: 1 1 300px;
+    list-style-type: '\2714\00A0\00A0'; /*Não é compatível com todo tipo de navegador*/
+    list-style-position: inside;
+}
+
+.cont-ideia ul li {
+    margin: 20px;
+}
+
+.cont-ideia {
+    font-size: 20px;
+    color: lightgray;
+}
+
+ a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*------------------------------------------------*/
+
+
+
+
+/*-----------------RODAPÉ-----------------*/
+footer {
+    background-color: #A7C6DA;
+    padding: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: #0D1321;
+    font-weight: 700;
+}
+
+footer a {
+    color: #1D3557;
+}
+
+footer a:hover {
+    color: #457B9D;
+}
+
+.footer-boxs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    flex: 1 1 200px;
+}
+
+.footer-box h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-box p {
+    padding: 5px;
+}
+
+.footer-box a {
+    padding: 5px;
+    text-align: center;
+
+}
+
+.autores {
+    padding-top: 40px;
+}

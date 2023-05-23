@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Página</title> <!--TÍTULO DA PÁGINA-->
+    <link rel="stylesheet" href="style.css"> <!-- LINK QUE CONECTA O NOSSO HTML AO CSS-->
+</head>
+<body>
+    <header> <!--USEI A TAG "header" PRA FAZER O CABEÇÁRIO DA PÁGINA-->
+        <nav> <!--A TAG "nav" É USADA PARA AGRUPAR UM CONJUNTO DE LINKS-->
+            <a href="#sobre">Sobre</a> <!--A TAG "a" É USADA PARA COLOCAR ALGUM LINK (AQUI NO CASO SÃO LINKS QUE LEVAM A SEÇÕES DA NOSSA PÁGINA)-->
+            <a href="#hobbies">Hobbies</a>
+            <a href="#trabalhos">Trabalhos Escolares</a>
+            <a href="#extensoes">Extensões</a>
+        </nav>
+
+        <section class="textos-header"> <!--Criei uma seção para colocar o título e um texto no cabeçário-->
+            <h1>Nossa Página</h1>
+            <h2>Conheça mais um pouco sobre nós</h2>
+        </section>
+    </header>
+
+    
+    <section id="sobre">
+        <div class="container">
+            <h1 class="titulo">Sobre Nós</h1>
+            <div class="cards">
+                <div class="carla">
+                    <img src="https://i.pinimg.com/originals/2a/51/64/2a5164c11b0468154dbcef44858e0769.gif" alt="foto-perfil">
+                    <h3>Carla</h3>
+                    <p class="texto">
+                        Tenho 18 anos, sou estudante de Desenvolvimento de Sistemas no Instituto Federal do Piauí e amante da área de T.I.
+                    </p>
+                </div>
+                <div class="andressa">
+                    <img src="https://i.pinimg.com/originals/6d/25/18/6d2518cd95695880e545c36c9995443d.gif" alt="foto-perfil">
+                    <h3>Andressa</h3>
+                    <p class="texto">
+                        Tenho 20 anos, sou estudante de Ciências contábeis na UEMA e estudante de desenvolvimento de sistemas no Ifpi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">    
+        <h1 class="titulo">Hobbies</h1>
+        <div class="hobs">
+            <div class="hob">
+                <div class="hob-div">
+                    <img src="https://i.pinimg.com/originals/75/c2/f8/75c2f842863ae2df6b3ac2d0a4d63026.gif" alt="">
+                    <p>Estudar e Programar</p>
+                </div>
+                <div class="hob-div">
+                    <img src="https://i.pinimg.com/originals/95/38/99/95389934d86aca579f63ead07fe8a12f.gif" alt="">
+                    <p>Assistir Séries e Animes</p>
+                </div>
+                <div class="hob-div">
+                    <img src="imagens/img-jogando.jpg" alt="">
+                    <p>Jogar no celular</p>
+                </div>
+            </div>
+            <div class="hob">
+                <div class="hob-div">
+                    <img src="imagens/img-patins.jpg" alt="">
+                    <p>Andar de patins</p>
+                </div>
+                <div class="hob-div">
+                    <img src="https://i.pinimg.com/originals/53/be/fb/53befb59578b676869b012551798cf8d.gif" alt="">
+                    <p>Ouvir Música</p>
+                </div>
+                <div class="hob-div">
+                    <img src="https://blogsemserifa.files.wordpress.com/2018/07/gif-steven.gif" alt="">
+                    <p>Ler</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section id="trabalhos">
+        <h1 class="titulo">Trabalhos Escolares</h1>
+        <div class="trabs">
+
+            <div class="trab">
+                <ul>
+                    <li><a href="https://carla11235813.github.io/projeto-android/" target="_blank">Projeto Android</a>: criado no curso de HTML e CSS do CursoEmVídeo</li>
+                    <li><a href="https://carla11235813.github.io/geek-frenetico/" target="_blank">Geek Frenético</a>: Página com conteudo geek</li>
+                    <li><a href="https://carla11235813.github.io/slide-show/" target="_blank">SlideShow</a>: feito em HTML e CSS</li>
+                </ul>
+            </div>
+
+            <div class="trab">
+                <ul>
+                    <li><a href="trabalhos/cantor.2.html" target="_blank">Cantor</a>: Página da Banda Legião Urbana</li>
+                    <li><a href="trabalhos/tabela 2.html" target="_blank">Tabela</a>: feita nas aulas de html</li>
+                    <li><a href="trabalhos/curriculo.html" target="_blank">Currículo</a>: feito em sala de aula</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="extensoes">
+        <h1 class="titulo">Extensões e Recursos</h1>
+        <div class="cont-ideia">
+            <ul>
+                <li><a href="https://www.dafont.com/pt/" target="_blank">Dafont</a>: site com fontes váriadas e temáticas</li>
+                <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a>: site com diversos tipos de fonte</li>
+                <li><a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-br" target="_blank">Fonts Ninja</a>: extenção do chrome que identifica fontes na web</li>
+                <li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br" target="_blank">ColorZilla</a>: extenção do chrome que identifica cores na web</li>
+                <li><a href="https://unsplash.com/pt-br" target="_blank">Unsplash</a>: site com imagens gratuitas e sem direitos autorais</li>
+            </ul>  
+            <ul>
+                <li><a href="https://coolors.co/" target="_blank">Coolors</a>: site que gera várias paleta de cores automaticamente</li>
+                <li><a href="https://www.pngwing.com/pt" target="_blank">PNGwing</a>: site com diversas imagens em png já prontas</li>
+                <li><a href="https://www.gimp.org/">GIMP</a>: Uma alternativa gratuita e segura ao photoshop</li>
+                <li><a href="https://www.pexels.com/pt-br/">Pexels</a>: site com videos e imagens gratuitas</li>
+                <li><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">CursoEmVideo</a>: Em especial o curso de HTML</li>
+            </ul>   
+        </div>
+    </section>
+
+
+    <footer> <!--A TAG footer É USADA PRA FAZER O RODAPÉ DE UMA PÁGINA-->
+        <div class="footer-boxs">
+            <div class="footer-box">
+                <h3>Telefone</h3>
+                <p>11 4002-8922</p>
+                <p>11 1234-5678</p>
+            </div>
+            <div class="footer-box">
+                <h3>E-mail</h3>
+                <a href="#">catce.2022211mtds0700@aluno.ifpi.edu.br</a>
+                <a href="#">catce.2022211mtds0093@aluno.ifpi.edu.br</a>
+            </div>
+        </div>
+        <div class="autores">
+            <p>Site Idealizado por <a href="https://github.com/andressafan" target="_blank">Andressa Felix</a> e <a href="https://github.com/carla11235813" target="_blank">Carla Lima</a></p>
+        </div>
+    </footer>
+</body>
+</html>
